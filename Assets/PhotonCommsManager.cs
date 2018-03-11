@@ -51,11 +51,13 @@ public class PhotonCommsManager : Photon.PunBehaviour {
     {
         currentPlayer = PhotonNetwork.Instantiate("Player", new Vector3(0, 1.6f, 0), Quaternion.identity, 0);
         currentPlayer.GetComponent<PlayerController>().isControllable = true;
+		Debug.Log ("attend as server");
     }
 
     private void initNonVRPlayer()
     {
         currentPlayer = PhotonNetwork.Instantiate("PCPlayer", new Vector3(0, 1.6f, 2), Quaternion.Euler(-Quaternion.identity.eulerAngles), 0);
+		Debug.Log ("attend as client");
         //Quaternion oppositeDirection = Quaternion.Euler(-currentPlayer.transform.rotation.eulerAngles);
         //currentPlayer.transform.rotation = oppositeDirection;
     }
