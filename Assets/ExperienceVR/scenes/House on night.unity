@@ -3464,6 +3464,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2005862216}
+    - target: {fileID: 82144192678376980, guid: 62f0ef3bbca5f284c82a1f4d48ca70b3,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62f0ef3bbca5f284c82a1f4d48ca70b3, type: 2}
   m_IsPrefabParent: 0
